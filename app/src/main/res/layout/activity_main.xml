@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <Button
+        android:id="@+id/btn_spread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进场" />
+
+    <Button
+        android:id="@+id/btn_shrink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_spread"
+        android:text="停止动画" />
+    <Button
+        android:id="@+id/btn_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_shrink"
+        android:text="背景变黑" />
+    <Button
+        android:id="@+id/btn_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_black"
+        android:text="背景变白" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <com.vip001.bubblebar.view.BubbleTipBar
+            android:id="@+id/bubbleTipBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="10dp" />
+
+        <com.vip001.bubblebar.view.BubbleBarView
+            android:id="@+id/pulltailerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
